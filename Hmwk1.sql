@@ -3,7 +3,7 @@ Jon Higgins
 Database Systems
 Queries Homework #1
 September 16, 2013
-/*
+*/
 
 -- 1. List all data for all customers.
 
