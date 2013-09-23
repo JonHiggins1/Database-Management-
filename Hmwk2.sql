@@ -70,6 +70,7 @@ where cid in (select cid
 	                    
 	                    
 -- 7. Find all customers who have the same discount as that of any customers in Dallas or Kyoto.
+
 select customers
 from discount
 where customer in (select cid
