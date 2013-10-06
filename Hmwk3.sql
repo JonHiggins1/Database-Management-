@@ -8,7 +8,11 @@ October 7, 2013
 
 --1. Get the cities of agents booking an order for customers c002. Use a subquery.
 
-
+select city
+from agents
+where aid in (select aid
+               from orders
+               where cid = 'c002')
 
 --2. Get the cities of agents booking an order for customer c002. This time use joins; no subqueries.
 
