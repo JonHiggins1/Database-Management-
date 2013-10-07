@@ -133,7 +133,7 @@ where c.cid = o.cid
 
 --16.Write a query to check the accuracy of the dollars column in the Orders table.This means calculating Orders.dollars from other data in other tables and then comparing those values to the values in Orders.dollars.
 
-select o.ordno, o.dollars as "Wrong Dollar Value", (p.priceUSD * o.qty) - ((p.priceUSD * o.qty ) * (c.discount/ 100)) as "Correct Dollar Value"
+select o.ordno, o.dollars as "Incorrect Dollar Value", (p.priceUSD * o.qty) - ((p.priceUSD * o.qty ) * (c.discount/ 100)) as "Correct Dollar Value"
 from orders o, products p, customers c
 where c.cid = o.cid
   and p.pid = o.pid
